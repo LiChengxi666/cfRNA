@@ -2,8 +2,8 @@
 library(pheatmap)
 
 # 读取计数矩阵
-count_data <- read.table("D:/cfRNA/selected_data_long.txt",sep='\t', header = TRUE, row.names = 1)
-matadata <- read.table("D:/cfRNA/metadata.long.txt", sep='\t', header = TRUE, row.names = 1)
+count_data <- read.table("../matrix/selected_data.txt",sep='\t', header = TRUE, row.names = 1)
+matadata <- read.table("../matrix/oaps.metadata.txt", sep='\t', header = TRUE, row.names = 1)
 count_matrix <- t(count_data)
 
 # 设置注释
